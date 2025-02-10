@@ -4,11 +4,11 @@ console.log(questionKm);
 const questionAge = Number (prompt ('Scrivere la propria età in numeri [ es 30]'))
 console.log(questionAge);
 
-let standardPrice = questionKm * 0.21;
+const standardPrice = questionKm * 0.21;
+const discount20 = standardPrice * 20 / 100;
+const discount40 = standardPrice * 40 / 100;
 
 
 if (questionAge < 18){
-    let discount20 = standardPrice * 20 / 100;
-} else if (questionAge > 65) {
-    let discount40 = standardPrice * 40 / 100;
+    alert ('Il costo del tuo biglietto è €`${discount20` ')
 }
