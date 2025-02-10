@@ -10,5 +10,9 @@ const discount40 = standardPrice * 40 / 100;
 
 
 if (questionAge < 18){
-    alert ('Il costo del tuo biglietto è €`${discount20` ')
+    alert ('Il costo del tuo biglietto è €' `${discount20}` )
+} else if (questionAge > 65) {
+    alert ('Il costo del tuo biglietto è €' `${discount40}`)
+} else {
+    alert ('Il costo del tuo biglietto è €' `${standardPrice}`)
 }
