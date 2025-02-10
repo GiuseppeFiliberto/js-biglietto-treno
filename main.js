@@ -10,9 +10,13 @@ const discount40 = standardPrice * 0.40;
 
 
 if (questionAge < 18){
+    standardPrice - discount20; 
     alert (`Il costo del tuo biglietto è € ${discount20.toFixed(2)} - hai diritto ad un 20% di sconto` );
-} else if (questionAge > 65) {
+} 
+else if (questionAge > 65) {
+    standardPrice - discount40; 
     alert  (`Il costo del tuo biglietto è € ${discount40.toFixed(2)} - hai diritto ad un 40% di sconto`);
-} else {
+} 
+else {
     alert (`Il costo del tuo biglietto è € ${standardPrice.toFixed(2)}`);
 }
